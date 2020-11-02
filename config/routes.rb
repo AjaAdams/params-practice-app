@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   namespace :api do
     get "/query_path" => "params#query_action"
     get "url_segment_path/:input" => "params#query_action"
+    post "body_param_path" => "params#query_action"
   end
 end
